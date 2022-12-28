@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .time-area{
+            width: 400px;
+            height: 200px;
+            background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 7px;
+            box-shadow: 3px 4px 20px #fff;
+            padding: 1rem;
+        }
+        .time{
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%);
+            color: #fff;
+            font-size: 4em;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px #FEC163, inset 5px 5px 15px #DE4313;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time-area">
+            <div id="hours" class="time"></div>
+            <div id="mins" class="time"></div>
+            <div id="seconds" class="time"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./main.js"></script>
+</body>
+</html>
